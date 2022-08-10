@@ -32,6 +32,6 @@ public class MercadoLibreSteps {
     public void copioDatosDeLasPrimerasPaginasDeResultados(int cantPaginas) {
         mercadoLibrePage.ifValidarThenClickBtnEntendido();
         mercadoLibrePage.ifValidarThenClickBtnEquisEntendido();
-        mercadoLibrePage.obtenerNombresDeTodosLosProductos();
+        mercadoLibrePage.obtenerInformacionSegunCantidadDePaginas(cantPaginas);
     }
 }

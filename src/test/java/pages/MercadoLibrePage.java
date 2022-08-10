@@ -41,6 +41,7 @@ public class MercadoLibrePage extends WebBasePage{
     public String[] listadoPreciosPagina;
     public String[] listadonombresPagina;
 
+    private String btnSiguiente = "//a[@title='Siguiente']";
 
 
     public MercadoLibrePage( ) {
@@ -77,12 +78,13 @@ public class MercadoLibrePage extends WebBasePage{
     }
 
 
-    public void obtenerNombresDeTodosLosProductos(){
-        String[] listadonombresPagina = new String[54];
-        String[] listadoLinksPagina = new String[54];
-        String[] listadoPreciosPagina = new String[54];
+    public void obtenerInformacionSegunCantidadDePaginas( int cantidadPaginas){
+        String[] listadonombresPagina = new String[162];
+        String[] listadoLinksPagina = new String[162];
+        String[] listadoPreciosPagina = new String[162];
         int varPrecio= 1;
-        for (int i = 0; i < listadonombresPagina.length; i++) {
+        int repeticiones = 1;
+        for (int i = 0; i < 54; i++) {
             WebElement t=driver.findElement(By.xpath(nombreProductoGenerico + "[" + (i + 1) + "]"));
             WebElement precio=driver.findElement(By.xpath(precioProductoGenerico + "[" + varPrecio + "]"));
             listadonombresPagina[i] = t.getAttribute("title");
@@ -98,7 +100,18 @@ public class MercadoLibrePage extends WebBasePage{
             System.out.println(listadoPreciosPagina[i]);
             System.out.println("****************************************************************************");
             varPrecio = varPrecio+2;
+            if (i == 53){
+                WebElement botonSiguiente = driver.findElement(By.xpath(btnSiguiente));
+                moveToElement(btnSiguiente);
+                botonSiguiente.click();
 
+                if ((repeticiones < cantidadPaginas) && isElementPresent(By.xpath(nombreProductoGenerico + "["+1+"]"))){
+                    repeticiones++;
+                    varPrecio=1;
+                    i=0;
+                }
+
+            }
         }
 
 

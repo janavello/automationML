@@ -8,7 +8,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e3caaf3-d50f-48bc-8934-e1caa71441ab" name="Changes" comment="Segundo commit antes del ciclo">
+    <list default="true" id="8e3caaf3-d50f-48bc-8934-e1caa71441ab" name="Changes" comment="commit correcta obtencion de los productos">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/MercadoLibrePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/MercadoLibrePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/WebBasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/WebBasePage.java" afterDir="false" />
@@ -198,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660028366564</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="commit correcta obtencion de los productos">
+      <created>1660111896543</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1660111896543</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -218,7 +225,8 @@
     <MESSAGE value="Se Agrega cambios en el MercadoLibrePage" />
     <MESSAGE value="Commit antes dfe mimir" />
     <MESSAGE value="Segundo commit antes del ciclo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Segundo commit antes del ciclo" />
+    <MESSAGE value="commit correcta obtencion de los productos" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit correcta obtencion de los productos" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
