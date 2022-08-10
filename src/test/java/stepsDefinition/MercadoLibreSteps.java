@@ -19,6 +19,7 @@ public class MercadoLibreSteps {
     @And("presiono el boton  buscar")
     public void presionoElBotonBuscar() throws InterruptedException {
         mercadoLibrePage.realizoBusqueda();
+        mercadoLibrePage.validoMensajeErrorYActualizoPagina();
     }
 
     @Given("abro el navegador chrome en la pagina de mercadolibre")
@@ -29,6 +30,8 @@ public class MercadoLibreSteps {
 
     @Then("copio datos de las {int} primeras paginas de resultados")
     public void copioDatosDeLasPrimerasPaginasDeResultados(int cantPaginas) {
-        mercadoLibrePage.obtenerPrimerNombreProducto();
+        mercadoLibrePage.ifValidarThenClickBtnEntendido();
+        mercadoLibrePage.ifValidarThenClickBtnEquisEntendido();
+        mercadoLibrePage.obtenerNombresDeTodosLosProductos();
     }
 }

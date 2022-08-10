@@ -35,6 +35,16 @@ public class WebBasePage {
         wait = new WebDriverWait(driver, 10);
     }
 
+    public boolean isElementPresent(By by) {
+        try {
+            driver.findElement(by);
+            return true;
+        }
+        catch (org.openqa.selenium.NoSuchElementException e) {
+            return false;
+        }
+    }
+
     public static void navigateTo(String url) {
         driver.get(url);
         driver.manage().window().maximize();
@@ -50,9 +60,7 @@ public class WebBasePage {
     }
 
     public void clickElement(String locator) {
-
         find(locator).click();
-
     }
 
     public void write(String locator, String textToWrite) {
@@ -82,7 +90,9 @@ public class WebBasePage {
     }
 
     public String textFromElement(String locator) {
-        return find(locator).getText();
+        if (isElementPresent(By.xpath(locator)))
+        {return find(locator).getText();}
+        else {return "Elemento "+locator+" no encontrado";}
     }
 
     public void takeScreenshot(String pathname) {

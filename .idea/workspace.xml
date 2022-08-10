@@ -8,14 +8,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e3caaf3-d50f-48bc-8934-e1caa71441ab" name="Changes" comment="Se Agrega cambios en el MercadoLibrePage">
+    <list default="true" id="8e3caaf3-d50f-48bc-8934-e1caa71441ab" name="Changes" comment="Segundo commit antes del ciclo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestClass.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/MercadoLibrePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/MercadoLibrePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runner/runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/WebBasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/WebBasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepsDefinition/MercadoLibreSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepsDefinition/MercadoLibreSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/MercadoLibre.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/MercadoLibre.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,13 +49,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "settings.editor.selected.configurable": "advanced.settings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="steps" />
@@ -194,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660023435518</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Commit antes dfe mimir">
+      <created>1660028366564</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1660028366564</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -212,7 +216,9 @@
     <MESSAGE value="primer commit" />
     <MESSAGE value="seungdo commit" />
     <MESSAGE value="Se Agrega cambios en el MercadoLibrePage" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se Agrega cambios en el MercadoLibrePage" />
+    <MESSAGE value="Commit antes dfe mimir" />
+    <MESSAGE value="Segundo commit antes del ciclo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Segundo commit antes del ciclo" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
